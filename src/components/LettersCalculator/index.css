@@ -1,0 +1,132 @@
+/* Write your code here. */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  height: 100vh;
+  padding: 20px;
+}
+
+.letters-calculator-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .letters-calculator-container {
+    flex-direction: row;
+  }
+}
+.phrase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+@media screen and (min-width: 992px) {
+  .phrase-container {
+    align-items: flex-start;
+    order: 0;
+  }
+}
+.heading {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Roboto';
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 46px;
+    text-align: start;
+  }
+}
+.input-phrase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.phrase-text {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.input {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+  margin-top: 2px;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 8px;
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    width: 350px;
+  }
+}
+
+.letter-text {
+  color: #1d976c;
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  background-color: #ffffff;
+  margin-top: 32px;
+  border-radius: 4px;
+  padding: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .letter-text {
+    align-self: start;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .letter-text {
+    padding-right: 38px;
+    padding-left: 38px;
+    padding: 30px;
+  }
+}
+.img-container {
+  display: flex;
+  order: 0;
+}
+.letter-img {
+  width: 100%;
+  order: 0;
+}
+@media screen and (min-width: 992px) {
+  .letter-img {
+    width: 550px;
+    order: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .letter-img {
+    width: 700px;
+  }
+}
